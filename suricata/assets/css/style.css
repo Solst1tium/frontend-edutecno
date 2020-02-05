@@ -8,7 +8,17 @@
     background-color: #e83e8c;
     color: #ffffff;
 }
-#productos{
+#productos {
     text-align: center;
     padding-top: 10%;
+    padding-bottom: 10%;
+}
+.card deck {
+    margin-right: 25%;
+}
+#pagos {
+    text-align: center;
+    padding-top: 10%;
+    background-color: #17a2b8;
+    color: #ffffff;
 }
