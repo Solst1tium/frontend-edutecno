@@ -1,0 +1,14 @@
+.navbar{
+    background-color: #e83e8c;
+}
+.navbar a{
+    color: #ffffff;
+}
+.navbar i{
+    background-color: #e83e8c;
+    color: #ffffff;
+}
+#productos{
+    text-align: center;
+    padding-top: 10%;
+}
