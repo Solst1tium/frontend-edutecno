@@ -1,85 +1,50 @@
-   
-function sumarNum(){
-    var x = document.forms["factores"]["factor1"].value;
-    var y = document.forms["factores"]["factor1"].value;
-    if (x == "" || y == "" ) {
-      alert("Por favor rellene los campos requeridos");
-      return false;
-    }else{
-        x = parseInt(document.getElementById("factor1").value);
-        y = parseInt(document.getElementById("factor2").value);
+function identID(x){
+  var facto1 = document.forms["factores"]["factor1"].value;
+  var facto2 = document.forms["factores"]["factor2"].value;
+  if (facto1 == "" || facto2 == "" ) {
+    alert("Por favor rellene los campos requeridos");
+    return false;
+  }else{
+    opMat(x);
+  }
+}   
+
+function opMat(etiqueta){
+  console.log(etiqueta);
+  var eleccion=etiqueta;
+  x = parseInt(document.getElementById("factor1").value);
+  y = parseInt(document.getElementById("factor2").value);
+
+switch (eleccion){
+  case "boton1":
         resultado = x + y;
         alert("Resultado: " + resultado);
-        }
-    }
+        break;
 
-function restarNum(){
-        var x = document.forms["factores"]["factor1"].value;
-        var y = document.forms["factores"]["factor1"].value;
-        if (x == "" || y == "" ) {
-          alert("Por favor rellene los campos requeridos");
-          return false;
-        }else{
-            x = parseInt(document.getElementById("factor1").value);
-            y = parseInt(document.getElementById("factor2").value);
-            resultado = x - y;
-            alert("Resultado: " + resultado);
-            }
-    }
+  case "boton2":
+        resultado = x - y;
+        alert("Resultado: " + resultado);
+        break;
 
-function multiplicarNum(){
-        var x = document.forms["factores"]["factor1"].value;
-        var y = document.forms["factores"]["factor1"].value;
-        if (x == "" || y == "" ) {
-          alert("Por favor rellene los campos requeridos");
-          return false;
-        }else{
-            x = parseInt(document.getElementById("factor1").value);
-            y = parseInt(document.getElementById("factor2").value);
-            resultado = x * y;
-            alert("Resultado: " + resultado);
-            }
-    }
+  case "boton3":
+        resultado = x * y;
+        alert("Resultado: " + resultado);
+        break;
 
-function dividirNum(){
-        var x = document.forms["factores"]["factor1"].value;
-        var y = document.forms["factores"]["factor1"].value;
-        if (x == "" || y == "" ) {
-          alert("Por favor rellene los campos requeridos");
-          return false;
-        }else{
-            x = parseInt(document.getElementById("factor1").value);
-            y = parseInt(document.getElementById("factor2").value);
-            resultado = x / y;
-            alert("Resultado: " + resultado);
-            }
-    }
+  case "boton4":
+        resultado = x / y;
+        alert("Resultado: " + resultado);
+        break;
 
-function elevadoANum(){
-        var x = document.forms["factores"]["factor1"].value;
-        var y = document.forms["factores"]["factor1"].value;
-        if (x == "" || y == "" ) {
-          alert("Por favor rellene los campos requeridos");
-          return false;
-        }else{
-            x = parseInt(document.getElementById("factor1").value);
-            y = parseInt(document.getElementById("factor2").value);
-            resultado = x ** y;
-            alert("Resultado: " + resultado);
-            }
-    }
+  case "boton5":
+        resultado = x ** y;
+        alert("Resultado: " + resultado);
+        break;
 
-function modulusNum(){
-        var x = document.forms["factores"]["factor1"].value;
-        var y = document.forms["factores"]["factor1"].value;
-        if (x == "" || y == "" ) {
-          alert("Por favor rellene los campos requeridos");
-          return false;
-        }else{
-            x = parseFloat(document.getElementById("factor1").value);
-            y = parseFloat(document.getElementById("factor2").value);
-            resultado = x % y;
-            alert("Resultado: " + resultado);
-            }
+  case "boton6":
+        resultado = x % y;
+        alert("Resultado: " + resultado);
+        break;
     }
+} 
 
