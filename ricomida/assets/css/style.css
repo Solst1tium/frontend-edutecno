@@ -54,7 +54,7 @@ hr{
 }
 
 .titulos{
-    text-decoration-line: underline;
+    text-decoration: underline;
     font-weight: bold;
 }
 
@@ -106,13 +106,13 @@ header .btn{
 #subscribir .btn{
     border-color: #DDDDDD;
     border-width: 1px;
-    color:#DDDDDD;
+    color:#ffffff;
 }
 
 #subscribir{
     background-color: #DC3545;
     text-align: center;
-    color: #dddddd;
+    color:#ffffff;
 }
 
 #relacionadas{
