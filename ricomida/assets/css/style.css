@@ -10,16 +10,6 @@ nav a{
 
 }
 
-#featured{
-    display: inline-block;
-    max-width:90%;
-}
-
-#featured img{
-    max-width:90%;
-    align-content: center;
-}
-
 ol.carousel-indicators {
     position: absolute;
     bottom: 5px;
@@ -59,11 +49,129 @@ ol.carousel-indicators li.active {
 hr{
     border: none;
     height: 2px;
-    max-width:80%;
     background-color: #373A3C;
+    max-width: 80%;
 }
 
 .titulos{
     text-decoration-line: underline;
     font-weight: bold;
+}
+
+.caja_img {
+    float: left;
+    width: 800px;
+    height:480px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/principal.jpg);
+
+}
+.caja_txt {
+    width: 70%;
+    padding-left: 50%;
+
+}
+
+.titulo_principal{
+    font-weight: bold;
+    font-size: 38px;
+    padding-right: 25%;
+}
+
+.subtitulo{
+    font-size: 20px;
+}
+
+header{
+    padding-top: 10%;
+    text-align: left;
+    max-width: 90%;
+    color:#373A3C;
+    padding-left:10%;
+}
+
+footer{
+    text-align: center;
+    background-color:#373A3C;
+    color: #DDDDDD;
+}
+
+header .btn{
+    border-color: #DDDDDD;
+    border-width: 1px;
+    padding:3px;
+}
+
+#subscribir .btn{
+    border-color: #DDDDDD;
+    border-width: 1px;
+    color:#DDDDDD;
+}
+
+#subscribir{
+    background-color: #DC3545;
+    text-align: center;
+    color: #dddddd;
+}
+
+#relacionadas{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+#receta{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#carrusel{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+
+@media only screen and (max-width: 320px)
+{
+    header{
+        padding-top: 100px;
+        padding-left:33px;
+    }
+
+    .caja_img {
+        float: left;
+        height: 250px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(../img/principal.jpg);
+    }
+
+    .titulo_principal{
+        margin-right: 0%;
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .subtitulo{
+        margin-right: 10%;
+        margin-left: 10%;
+        font-size: 18px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .btn-group{
+        margin:0;
+        padding:0;
+    }
+
+}
+
+@media only screen and (min-width: 500px)
+{
+    header{
+        height: 480px;
+    }
+
 }
