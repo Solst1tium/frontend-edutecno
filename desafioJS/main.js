@@ -15,6 +15,12 @@ $( document ).ready(function() {
             }
       });
       
-      $("h2").css("color", "blue");
+    $("h2").click(function(){
+        $("h2").css("color", "red");
+      });
+
+    $("ul li:eq(7)").append('<ul><li><a href="#">link 4.a</a></li></ul>');        
+
+    $("ul li:eq(7)").after('<li><a href="#">link 5</a></li>');
 
 });
