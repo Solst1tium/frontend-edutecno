@@ -1,0 +1,78 @@
+a{
+    color: #EFCEFA;
+}
+
+a:hover{
+    color: #826C7F;
+}
+
+a:active{
+    color: #3A3335;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+
+#experiencias i{
+    color: #826C7F;
+    border-color: #EFCEFA;
+}
+
+#experiencias p{
+    color: #3A3335;
+    font-size: larger;
+}
+
+h2{
+    color: #3A3335;
+    text-decoration: underline;
+}
+
+#contacto button{
+    background-color: #826C7F;
+    border-color: #EFCEFA;
+}
+
+.lila {
+    background-color: #5D4E60;
+    color: #3A3335;
+  }
+
+.rosa{
+    background-color: #826C7F;
+    color: #3A3335; 
+}
+
+
+@media only screen and (max-width: 500px)
+{
+    header{
+        padding-top: 15px;
+    }
+
+}
+
+
+
+
+/* colores
+  #5D4E60
+  #826C7F
+  #A88FAC
+  #D4B2D8
+  #EFCEFA
+  #FCF6E8
+ #3A3335  */
