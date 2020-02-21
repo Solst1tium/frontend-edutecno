@@ -81,6 +81,12 @@ ol.carousel-indicators li.active {
     border-width: 2px;
 }
 
+#news .btn{
+    background-color: #826C7F;
+    border-color: #EFCEFA;
+    border-width: 2px;
+}
+
 .card-img-top{
     max-height: 500px;
 }
