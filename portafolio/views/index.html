@@ -36,13 +36,16 @@
                 <a class="nav-link" href="#experiencias">Experiencias</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#work">Trabajos</a>
+                <a class="nav-link" href="#work">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#tecnicas">Técnicas</a>
+                <a class="nav-link" href="#ilustr">Ilustraciones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
+                <a class="nav-link" href="#comisiones">Encargos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Consultas</a>
               </li>
             </ul>
           </div>
@@ -51,37 +54,131 @@
 
     <header id="top" class="hero text-light text-center py-3">
         <div class="container pt-5">
-            <h2 class="display-3 my-3" style="color:#826C7F; font-family: 'Lobster', cursive;">Portafolio</h2>
+            <h2 class="titulos display-3 my-3" style="color:#826C7F;">Portafolio</h2>
             <hr style="border-color: #826C7F;">
             <p class="my-3" style="font-size: larger;">Eva Montecinos</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Hablante nativo de español con conocimiento avanzado de inglés e intermedio de japonés. Detallista y diestra en investigación. Capaz de trabajar en equipos y de forma independiente. Experiencia en soporte al cliente, control de calidad, traducción, ilustración y educación.</p>
         </div>
     </header>
 
     <section id="experiencias" class="text-center px-5 pt-2 m-3">
-            <h2 class="py-5">Mis Experiencias</h2>
+            <h2 class="py-5">Experiencias</h2>
             <div class="row">
                 <div class="col">
                     <div><i class="fas fa-chalkboard-teacher fa-7x" data-toggle="tooltip" title="Profesor de Métodos de Estudio en USACH"></i></div>
-                    <div class="py-3"><p>Educación</p></div>
+                    <div class="py-3" ><p>Educación</p><p data-toggle="modal" data-target="#Modal1"><small class="text-muted">Ver detalles</small></p></div>
                 </div>
                 <div class="col">
                     <div><i class="fas fa-laptop-code fa-7x" data-toggle="tooltip" title="C, Python, Soporte Técnico, Frontend"></i></div>
-                    <div class="py-3"><p>Informática</p></div>
+                    <div class="py-3"><p>Informática</p><p data-toggle="modal" data-target="#Modal2"><small class="text-muted">Ver detalles</small></p></div>
                 </div>
                 <div class="col">
                     <div><i class="fas fa-pencil-alt fa-7x" data-toggle="tooltip" title="Inglés-Japonés-Español"></i></div>
-                    <div class="py-3"><p>Traducción</p></div>
+                    <div class="py-3"><p>Administración & Traducción</p><p data-toggle="modal" data-target="#Modal3"><small class="text-muted">Ver detalles</small></p></div>
                 </div>
                 <div class="col">
                     <div><i class="fas fa-paint-brush fa-7x" data-toggle="tooltip" title="Arte Digital y Tradicional"></i></div>
-                    <div class="py-3"><p>Ilustración</p></div>
+                    <div class="py-3"><p>Ilustración</p><p data-toggle="modal" data-target="#Modal4"><small class="text-muted">Ver detalles</small></p></div>
                 </div>
             </div>
+
+<!-- Modales -->
+<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLongTitle1">Educación - Experiencias</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <p class="subtitulo">Universidad de Santiago, Santiago - Chile —Profesor</p>
+        <p>Orienté a estudiantes de primer año de ingeniería en actividades relacionadas con la optimización de tiempo y resolución de problemas. Realicé presentaciones sobre DMAIC, diagramas Ishikawa y Duncker, análisis K-T, entre otros. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle2" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLongTitle2">Informática - Experiencias</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <p class="subtitulo">Vigilius Educa, Santiago - Chile — Soporte Computacional</p>
+        <p>Instalé y realicé mantención al LMS Moodle de Vigilius. Desarrollé el curso de e-learning sobre uso de Moodle y la página Web de la compañía. Proporcioné asistencia técnica respecto a sistemas computacionales existentes. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle3" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLongTitle3">Administración & Traducción - Experiencias</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <p class="subtitulo">Experian, Santiago - Chile —Audit & Risk Administrator Senior / NCAC Associate</p>
+
+        <p>Asistí en la evaluación del trabajo realizado por los especialistas en atención al cliente y la identificación de oportunidades para el mejoramiento de políticas y procedimientos de calidad en el National Consumer Assistance Center. </p>
+        <p>Recibí correspondencia de clientes, llevé a cabo acciones para resolver sus consultas y quejas, y solucioné discrepancias en la base de datos crediticia usando software especializado. </p>
+
+        <p class="subtitulo">Japan External Trade Organization, Santiago - Chile —Traductor </p>
+
+        <p>Traduje documentos relacionados con medicina, medioambiente, R&D, comercio exterior, cultura y nuevas tecnologías. Confeccioné el boletín mensual para su sitio Web. </p>
+        
+        <p class="subtitulo">Traductor & Ilustrador Independiente</p>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle4" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLongTitle4">Ilustración - Experiencias</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <p class="subtitulo">Traductor & Ilustrador Independiente</p>
+
+        <p class="subtitulo">Dibujante de cómic "Rosa y Romero"</p>
+
+        <p class="subtitulo">Tienda online en DA</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     </section>
 
     <section id="work" class="rosa text-center pt-2 pb-5">
-        <h2 class="py-5">Mis Últimos Trabajos</h2>
+        <h2 class="py-5">Últimos Proyectos</h2>
         <div id="carouselInterval" class="carousel slide mx-auto" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselInterval" data-slide-to="0" class="active"></li>
@@ -95,7 +192,7 @@
             <div class="carousel-item active" data-interval="5000">
               <div class="container">
                 <div>
-                  <img src="../assets/img/meetnadcoffee.png" class="d-block w-100" alt="Proyecto Meet&Coffee"></div>
+                  <a href="../proyectos/meet&coffee/index.html" target="_blank"><img src="../assets/img/meetnadcoffee.png" class="d-block w-100" alt="Proyecto Meet&Coffee"></a></div>
               <div>
                 <h5>Proyecto Meet & Coffee</h5>
               </div>
@@ -104,7 +201,7 @@
             <div class="carousel-item" data-interval="5000">
               <div class="container">
                 <div>
-                  <img src="../assets/img/iguana_view.png" class="d-block w-100" alt="Proyecto Iguanas"></div>
+                  <a href="../proyectos/iguana/views/index.html" target="_blank"><img src="../assets/img/iguana_view.png" class="d-block w-100" alt="Proyecto Iguanas"></a></div>
               <div>
                 <h5>Proyecto Iguanas</h5>
               </div>
@@ -113,7 +210,7 @@
             <div class="carousel-item" data-interval="5000">
               <div class="container">
                 <div >
-              <img src="../assets/img/oliviaros_view.png" class="d-block w-100" alt="Proyecto Olivia Ros"></div>
+                  <a href="../proyectos/olivia_ros/views/index.html" target="_blank"><img src="../assets/img/oliviaros_view.png" class="d-block w-100" alt="Proyecto Olivia Ros"></a></div>
               <div>
                 <h5>Proyecto Olivia Ros</h5>
               </div>
@@ -122,7 +219,7 @@
             <div class="carousel-item" data-interval="5000">
               <div class="container">
                 <div >
-              <img src="../assets/img/suricata_view.png" class="d-block w-100" alt="Proyecto Suricata Foods"></div>
+                  <a href="../proyectos/suricata/views/index.html" target="_blank"><img src="../assets/img/suricata_view.png" class="d-block w-100" alt="Proyecto Suricata Foods"></a></div>
               <div >
                 <h5>Proyecto Suricata Foods</h5>
               </div>
@@ -131,7 +228,7 @@
             <div class="carousel-item" data-interval="5000">
               <div class="container">
                 <div >
-              <img src="../assets/img/cuppon_view.png" class="d-block w-100" alt="Proyecto Cuppon"></div>
+                  <a href="../proyectos/cuppon/views/index.html" target="_blank"><img src="../assets/img/cuppon_view.png" class="d-block w-100" alt="Proyecto Cuppon"></a></div>
               <div >
                 <h5>Proyecto Cuppon</h5>
               </div>
@@ -140,7 +237,7 @@
             <div class="carousel-item" data-interval="5000">
               <div class="container">
                 <div >
-              <img src="../assets/img/ricomida_view.png" class="d-block w-100" alt="Proyecto Ricomida"></div>
+                  <a href="../proyectos/ricomida/views/index.html" target="_blank"><img src="../assets/img/ricomida_view.png" class="d-block w-100" alt="Proyecto Ricomida"></a></div>
               <div  >
                 <h5>Proyecto Ricomida</h5>
               </div>
@@ -150,8 +247,8 @@
         </div>
     </section>
 
-    <section id="tecnicas" class="text-center pt-2 m-5">
-      <h2 class="py-5">Técnicas Pictóricas Utilizadas</h2>
+    <section id="ilustr" class="text-center pt-2 m-5">
+      <h2 class="py-5">Ilustraciones Recientes</h2>
       <div class="card-deck">
         <div class="card">
           <img src="../assets/img/red_alita_full.png" class="card-img-top" alt="Alita">
@@ -180,8 +277,12 @@
       </div>
     </section>
 
+    <section id="comisiones" class="text-center pt-2 m-5">
+      <div class="typeform-widget mx-auto" data-url="https://eicarriemontecinos.typeform.com/to/oiaB7E" style="width: 75%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=oiaB7E&utm_source=typeform.com-01E1JB9BXP6P7ZTXW9PPM6EF7C-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+    </section>
+
     <section id="contacto" class="text-center px-5 pt-2 m-3">
-        <h2 class="py-3">Contacto</h2>
+        <h2 class="py-3">Otras Consultas</h2>
         <form id="forma_contacto">
             <div class="form-group row">
               <label for="inputName" class="col-sm-2 col-form-label">Nombre</label>

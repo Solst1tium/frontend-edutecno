@@ -16,11 +16,15 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
-
-
 h2{
     color: #3A3335;
     text-decoration: underline;
+    font-family: 'Lobster', cursive;
+}
+
+.subtitulo{
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 ol.carousel-indicators {
@@ -77,13 +81,9 @@ ol.carousel-indicators li.active {
     border-width: 2px;
 }
 
-#galeria img{
+.card-img-top{
     max-height: 500px;
 }
-
-/* #carouselInterval{
-    max-width: 600px;
-} */
 
 #experiencias i{
     color: #826C7F;
