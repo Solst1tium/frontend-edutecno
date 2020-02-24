@@ -1,0 +1,65 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color:#707070;
+}
+
+footer{
+    text-align: center;
+    padding:5%;
+}
+.verde{
+    background-color: #28a745;
+    color:#ffffff;
+}
+
+.verde a{
+    color:#ffffff;
+}
+
+#verde_form{
+    background-color: #28a745;
+    color:#ffffff;
+    text-align: center;
+    padding:5%;
+}
+
+#ofertadestacada{
+    padding-top: 10%;
+    text-align: center;
+}
+
+#productos{
+    padding-top: 5%;
+}
+
+.verde_precio{
+    color: #28a745;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.gris_titulo{
+    color:#212529;
+    font-weight: bolder;
+    font-size: larger;
+}
+.blanco_titulo{
+    color:#ffffff;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.navbar button{
+    color:#ffffff;
+    border-color: #ffffff;
+}
+
+@media only screen and (max-width: 320px)
+{
+    #productos{
+        padding-top: 25%;
+    }
+}
