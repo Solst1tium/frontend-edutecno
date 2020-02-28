@@ -1,0 +1,29 @@
+@import '../abstracts/variables';
+
+.section__articulo .btn {
+    background-color: $nickel;
+    border: none;
+    color: $platinum;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 16px;
+
+    &:hover{
+        background-color: $platinum;
+    }
+
+  }
+
+.btn-group .btn{
+    background-color: $white;
+    border-radius: 16px;
+    color:$nickel;
+
+    &:active, &:hover {
+        background-color: $nickel;
+        color: white;
+      }
+}
