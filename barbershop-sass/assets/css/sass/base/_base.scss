@@ -1,6 +1,23 @@
 @import '../abstracts/variables';
 
 
+.section__articulo{
+
+    .section-articulo__a-roboto_text{
+        @include roboto_text ($spanish-pink, 16px, normal, normal);
+    }
+    
+    .section-articulo__a-roboto_text:hover{
+        @include roboto_text ($raisin-black, 16px, normal, normal);
+    }
+    
+    .section-articulo__a-roboto:active{
+        @include roboto_text ($platinum, 16px, normal, normal);
+    }
+
+}
+
+
 .section__autor{
     border-color: $platinum;
     border-style: ridge;
