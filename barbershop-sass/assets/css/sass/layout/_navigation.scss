@@ -1,0 +1,28 @@
+
+.navigation {  
+    a:hover {
+        color: $ruddy-pink;
+        font-size: 14px;
+      }
+    a {
+        color: $white;
+        font-size: 14px;
+      }
+    .navbar-brand{
+        color: $white;
+    }
+    background-color: $eerie-black;
+    color: $white;
+
+    img{
+        max-height: 30px;
+    }
+    i{
+        color: $white;
+    }
+    .navigation__link{
+        font-size: 14px;
+        padding-left: 10px;
+    }
+}
+

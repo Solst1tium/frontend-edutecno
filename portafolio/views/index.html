@@ -39,13 +39,10 @@
                 <a class="nav-link" href="#work">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#ilustr">Ilustraciones</a>
+                <a class="nav-link" href="#ilustr">Ilustraciones y Encargos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#comisiones">Encargos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto">Consultas</a>
+                <a class="nav-link" href="#contacto">Otras Consultas</a>
               </li>
             </ul>
           </div>
@@ -60,6 +57,58 @@
             <p>Hablante nativo de español con conocimiento avanzado de inglés e intermedio de japonés. Detallista y diestra en investigación. Capaz de trabajar en equipos y de forma independiente. Experiencia en soporte al cliente, control de calidad, traducción, ilustración y educación.</p>
         </div>
     </header>
+
+
+    <section id="news">
+      <div class="jumbotron text-center hoverable p-4">
+        <div class="row">
+          <div class="col-md-4 offset-md-1 mx-3 my-3">
+            <div class="view overlay">
+              <img src="../assets/img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" class="img-fluid" alt="Clases">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+          </div>
+          <div class="col-md-7 text-md-left ml-3 mt-3">
+              <h6 class="h6 pb-1"><i class="fas fa-desktop pr-1"></i>Estudios</h6>
+
+            <h4 class="h4 mb-4">Último curso rendido</h4>
+
+            <p class="font-weight-normal">Clases Frontend en Edutecno, Perfeccionamiento SENCE</p>
+
+            <a class="btn" data-toggle="modal" data-target="#Modalnoticias">Ver otros estudios</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="Modalnoticias" tabindex="-1" role="dialog" aria-labelledby="Modalnoticias" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="Modalnoticias">Estudios</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="text-align: justify;">
+              <ul>
+              <li>Universidad de Santiago, Santiago - Chile — Licenciado de Ejecución en Computación e Informática</li>
+              <li>Pontificia Universidad Católica de Chile, Santiago - Chile —Diplomado en Ilustración</li>
+              <li>Pontificia Universidad Católica de Chile, Santiago - Chile —Diplomado en Cultura Asiática</li>
+              <li>Universidad Central, Santiago - Chile — Postítulo en Docencia e Investigación en Educación Superior</li>
+              <li>Universidad de Santiago, Santiago- Chile — Licenciado en Lingüística Aplicada a la Traducción Mención Inglés-Japonés</li>
+            </ul>
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 
     <section id="experiencias" class="text-center px-5 pt-2 m-3">
             <h2 class="py-5">Experiencias</h2>
@@ -277,7 +326,7 @@
       </div>
     </section>
 
-    <section id="comisiones" class="text-center pt-2 m-5">
+    <section id="comisiones" class="d-none d-lg-block text-center pt-2 m-5">
       <div class="typeform-widget mx-auto" data-url="https://eicarriemontecinos.typeform.com/to/oiaB7E" style="width: 75%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=oiaB7E&utm_source=typeform.com-01E1JB9BXP6P7ZTXW9PPM6EF7C-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
     </section>
 
@@ -303,7 +352,6 @@
               <button id="button_form" type="submit" class="btn" onclick="mensajeEnviado()">Enviar</button>
           </form>
     </section>
-
 
     <footer class="lila text-center pt-5 pb-3">
         <div class="container">

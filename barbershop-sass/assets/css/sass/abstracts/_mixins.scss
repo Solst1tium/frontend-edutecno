@@ -1,0 +1,17 @@
+@import '../abstracts/variables';
+
+  @mixin roboto_text ($font-color, $given-font-size, $given-font-weight, $given-font-style) {
+  font-family: 'Roboto';
+  color: $font-color;
+  font-size: $given-font-size;
+  font-weight: $given-font-weight;
+  font-style: $given-font-style;
+}
+
+@mixin playfair_text ($font-color, $given-font-size, $given-font-weight, $given-font-style) {
+  font-family: 'Playfair Display';
+  color: $font-color;
+  font-size: $given-font-size;
+  font-weight: $given-font-weight;
+  font-style: $given-font-style;
+}

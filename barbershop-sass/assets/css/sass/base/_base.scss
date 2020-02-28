@@ -1,0 +1,37 @@
+@import '../abstracts/variables';
+
+
+.section__autor{
+    border-color: $platinum;
+    border-style: ridge;
+
+    img{
+        border-radius: 50%;
+    }
+    .section__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .section-autor__a-roboto_text{
+        @include roboto_text ($spanish-pink, 18px, normal, normal);
+    }
+    
+    .section-autor__a-roboto_text:hover{
+        @include roboto_text ($raisin-black, 18px, normal, normal);
+    }
+    
+    .section-autor__a-roboto:active{
+        @include roboto_text ($platinum, 18px, normal, normal);
+    }
+
+}
+
+
+
+
+.section__botonera{
+    background-color: $light-gray;
+}
+

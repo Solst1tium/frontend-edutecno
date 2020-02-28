@@ -1,0 +1,29 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+h1{
+    @include playfair_text ($white, 70px, 900, italic);
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+h5{
+    @include playfair_text ($eerie-black, 30px, bold, italic);
+}
+
+
+p{
+    @include roboto_text ($raisin-black, 16px, lighter, normal);
+    line-height: 200%;
+}
+
+
+@media only screen and (max-width: 568px)
+{
+    header{
+        h1{
+            @include playfair_text ($white, 30px, 900, italic);
+        }
+    }
+
+}
