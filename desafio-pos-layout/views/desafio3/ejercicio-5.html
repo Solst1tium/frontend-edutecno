@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <style media="screen" type="text/css">
+        body {
+        margin: 0;
+        padding: 0;
+        }
+        .main {
+        margin: 5px;
+        }
+        .flag__container {
+        border: 1px solid #808080;
+        height: 150px;
+        width: 300px;
+        box-sizing: border-box;
+        display: inline-block;
+        }
+
+        .grid-container__entry{
+        display: inline-block;
+        width: 49%;
+        }
+        .grid__container{
+        max-width: 700px;
+        padding-top: 5%;
+        padding-left: 10%;
+        }
+        .position-relative-japan{
+            position: relative;
+            top: 25px;
+            left: 100px;
+        }
+
+    }
+        
+
+        </style>
+</head>
+<body>
+    <section class="main">
+        <div class="grid__container">
+            <div class="grid-container__entry">
+                <div class="flag__container">
+                    <div style="height:50px; width:300px; background-color: red; "></div>
+                    <div style="height:50px; width:300px; background-color: yellow; "></div>
+                    <div style="height:50px; width:300px; background-color: red;"></div>
+                </div>
+                <div>España</div>
+            </div>
+
+
+            <div class="grid-container__entry">
+                <div class="flag__container" style="background-color: red;">
+                    <div style="height:150px; width:30px; background-color: white; margin-left: 25%;"></div>
+                    <div style="height:30px; width:300px; background-color: white; margin-top: -99px;"></div>
+
+                </div>
+                <div>Dinamarca</div>
+            </div>
+
+            <div class="grid-container__entry">
+                <div class="flag__container">
+                    <div style="height:150px; width:75px; background-color: red; float: left;"></div>
+                    <div style="height:50px; width:300px; background-color: green; "></div>
+                    <div style="height:50px; width:300px; background-color: white;"></div>
+                    <div style="height:50px; width:300px; background-color: black;"></div>
+                </div>
+                <div>Emiratos Árabes</div>
+            </div>
+
+            <div class="grid-container__entry">
+                <div class="flag__container" style="background-color: white;">
+                    <div class="position-relative-japan" style="background-color:red; height:100px; width:100px; border-radius: 50%;"></div>
+                </div>
+                <div>Japón</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
