@@ -1,0 +1,31 @@
+@import "../abstracts/variables";
+
+.tags {
+    border-bottom: 1px solid gray;
+}
+
+.tags ul {
+    padding: 0;
+    list-style: none;
+}
+
+.tags ul li {
+    padding: 2px 4px;
+    background-color: steelblue;
+    margin-right: 1px;
+    color: white;
+}
+
+.group input,
+.group button {
+    display: inline-block;
+    border-width: 0;
+    font-size: 13px;
+    padding: 5px 10px;
+
+}
+
+.group button {
+    background-color: coral;
+    color: white;
+}

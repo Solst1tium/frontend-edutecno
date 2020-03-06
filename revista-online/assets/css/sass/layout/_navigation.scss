@@ -1,0 +1,35 @@
+@import "../abstracts/variables";
+
+.navigation{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navigation__nav-menu {
+    display: inline-block;
+    width: 75%;
+    text-align: right;
+    height:inherit;
+
+    ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+}
+
+
+.navigation__logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    width:25%;
+}
+
+.input-menu {
+    border-radius: 30px;
+}
