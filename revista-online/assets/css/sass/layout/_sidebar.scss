@@ -1,18 +1,33 @@
-.noticias-destacadas {
-    margin-bottom: 50px;
-}
+@import "../abstracts/variables";
+@import '../abstracts/mixins';
 
-.noticias-destacadas img {
-    width: 220px;
-    height: 200px;
-}
+aside{
+    width:25%;
+    display: inline-block;
+    margin-bottom: 25%;
+    float: left;
 
-.listado-izquierdo {
-    width: 220px;
-    float: right;
-}
-
-.cabecera-listado {
-    width: 220px;
+    .aside__acerca-de {
     border-bottom: 1px solid gray;
+    max-height:25%;
+    }
+
+    .aside__tags{
+    border-bottom: 1px solid gray;    
+    }
+
+    img{
+        width: 220px;
+        height: 200px;
+    }    
+
 }
+
+@media only screen and (max-width: 800px) {
+
+    .aside{
+        display:none;
+    }
+
+}
+

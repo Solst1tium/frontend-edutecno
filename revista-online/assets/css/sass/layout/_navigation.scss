@@ -4,9 +4,10 @@
     width: 100%;
     padding: 10px;
     border-bottom: 1px solid gray;
-    position: fixed;
     top: 0;
     left: 0;
+    display: inline-block;
+    background-color: #fff;
 }
 
 .navigation__nav-menu {
@@ -20,7 +21,6 @@
     text-transform: uppercase;
     }
 }
-
 
 .navigation__logo {
     font-size: 24px;
