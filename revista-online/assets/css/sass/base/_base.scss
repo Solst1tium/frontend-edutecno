@@ -1,35 +1,42 @@
 @import "../abstracts/variables";
 @import '../abstracts/mixins';
 
-body{
-    font-family: $primary-font;
-}
-
-.contenedor__externo{
+.contenedor__seccion-principal{
     text-align: center;
+    margin-top: 5%;
 }
 
-.lalafel{
-    background-color: blue;
-}
-.article{
-    margin-top: 10%;
+.contenedor-seccion-principal__interno{
     display: inline-block;
-    background-color: #dedede;
+    background-color: $white;
     width: 90%;
 }
 
 .section__newsletter {
     width: 100%;
-    background-color: #f2f4f5;
+    background-color: $grey;
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
+
+    .section-newsletter__boton{
+        background-color: $coral;
+        border: none;
+        font-family: $primary-font;
+        font-size:small;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        padding:2px 8px;
+        margin: 2px 2px;
+        cursor: pointer;
+    }
 }
 
 .section__noticias{
     float: left; 
-    width:75%;
+    width:80%;
+    text-align: center;
 }
 
 .section-noticias__noticia-individual{
@@ -37,25 +44,40 @@ body{
     margin: 5px;
     cursor: pointer;
     width: 25%;
-    padding: 15px;
+    padding: 2%;
+    text-align: left;
 
     img{
-        height: 300px;
+        height: 400px;
         max-width: 210px;
     }
-
-    p{
-        padding: 5px 10px;
-    }
 }
 
-@media only screen and (max-width: 800px) {
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) { 
 
     .section-noticias__noticia-individual{
-        width: 33.33%;
+        width: 47%;
+        
+        img{
+            width: 100%;    
+            }
+    }
+        
+    .section__noticias{
+        width:100%;
+        }
+        
+ }
+
+@media only screen and (max-width: 459px) {
+
+    .section-noticias__noticia-individual{
+        width: 100%;
+        text-align: center;
 
         img{
-            max-width: 100%;
+            max-width: 100%;    
         }
     }
 
@@ -63,20 +85,7 @@ body{
         width:100%;
     }
 
-}
-
-@media only screen and (max-width: 320px) {
-
-    .section-noticias__noticia-individual{
-        width: 75%;
-
-        img{
-            max-width: 100%;
-        }
-    }
-
-    .section__noticias{
+    .contenedor-seccion-principal__interno{
         width:100%;
     }
 }
-

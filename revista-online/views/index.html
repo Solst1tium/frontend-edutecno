@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Desafio</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/sass/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="author" content="Eva Montecinos">
 </head>
 
@@ -13,18 +13,16 @@
     <nav class="navigation">
         <div class="navigation__logo">Diario</div>
         <div class="navigation__nav-menu">
-            <ul>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><input class="input-menu" type="text" name="buscar" placeholder="buscar..." /></li>
-            </ul>
+            <span>
+                <a href="" class="navigation-nav__menu-items">Nosotros</a></li>
+                <a href="" class="navigation-nav__menu-items">Contacto</a></li>
+                <input class="input-menu" type="text" name="buscar" placeholder="buscar..." />
+            </span>
         </div>
     </nav>
 
-<div class="lalafel">lalalfel</div>
-
-<div class="contenedor__externo">
-    <article class="article row">
+<div class="contenedor__seccion-principal">
+    <div class="contenedor-seccion-principal__interno row">
         <section class="section__noticias">
             <div class="section-noticias__noticia-individual">
                 <div class="section-noticias__noticia-header">
@@ -116,15 +114,17 @@
                 </p>
             </div>
             <div class="aside__tags">
-                <h1>Tags </h1>
-                <ul>
-                    <li>Viajes</li>
-                    <li>Noticias</li>
-                    <li>Comida</li>
-                </ul>
+                <h1>Tags</h1>
+                <div class="aside-tags__botonera">
+                    <span>
+                        <a href="#" class="aside__tags-boton">Viajes</a>
+                        <a href="#" class="aside__tags-boton">Noticias</a>
+                        <a href="#" class="aside__tags-boton">Comida</a>
+                    </span>
+                </div>
             </div>
             <div class="aside__noticias-destacadas">
-                <h1>Destacados </h1>
+                <h1>Destacados</h1>
                 <div class="item">
                     <h4>Lorem ipsum dolor sit amet.</h4>
                     <img src="https://picsum.photos/200/200?random=7" />
@@ -139,7 +139,7 @@
                 </div>
             </div>
         </aside> 
-    </article>
+    </div>
 </div>
 
 
@@ -148,7 +148,7 @@
             <h2>Lorem ipsum dolor sit amet</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
             <div class="section-newsletter__subscribe-entry">
-                <input type="text" name=""><button>Suscríbete</button>
+                <input type="text" name=""><button class="section-newsletter__boton">Suscríbete</button>
             </div>
     </section>    
 
