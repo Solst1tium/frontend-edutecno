@@ -6,11 +6,6 @@
     box-sizing: border-box; 
     }
 
-@mixin variable-spacing {
-    
-    @content;
-}
-
 @mixin sizing-mid {
 
     @media (max-width: 768px) { 
