@@ -16,9 +16,17 @@
         text-align: right;
         height:inherit;
 
-        .navigation-nav__menu-links{
-        text-decoration: none;
+        @include sizing-small{
+            .menu-items__remover{
+                display:none;
+            }
+        }
+
+        .navigation-nav__menu-items{
         text-transform: uppercase;
+        font-size: medium !important;
+        font-family: $primary-font;
+
         }
     }
 
@@ -35,3 +43,4 @@
     }
 
 }
+

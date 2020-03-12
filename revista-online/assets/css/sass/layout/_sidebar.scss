@@ -8,6 +8,14 @@ aside{
     float: left;
     text-align: justify !important;
 
+    @include sizing-mid{
+        display: none;
+    }
+
+    @include sizing-small{
+        display: none;
+    }
+
     .aside__acerca-de {
     border-bottom: 1px solid gray;
     max-height:15%;
@@ -35,6 +43,7 @@ aside{
        font-size:small;
        padding:2px 4px;
        text-decoration:none;
+       font-weight: normal !important;
 
         &:hover {
             background-color: $dark-blue;
@@ -46,21 +55,3 @@ aside{
         text-align: center;
     }
 }
-
-
-// // Small devices (landscape phones, 576px and up)
-// @media (max-width: 576px) { 
-    
-//     .aside{
-//         display:none;
-//     }
-//  }
-
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) { 
-
-    .aside{
-        display:none;
-    }
-        
- }

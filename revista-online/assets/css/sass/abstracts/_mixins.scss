@@ -6,4 +6,18 @@
     box-sizing: border-box; 
     }
 
+@mixin sizing-mid {
 
+    @media (max-width: 768px) { 
+        @content;
+    }
+
+}
+
+@mixin sizing-small {
+
+    @media (max-width: 459px) {
+    
+        @content;
+    }
+}

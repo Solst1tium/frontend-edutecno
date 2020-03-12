@@ -1,31 +1,18 @@
 @import "../abstracts/variables";
 
-.tags {
-    border-bottom: 1px solid gray;
-}
-
-.tags ul {
-    padding: 0;
-    list-style: none;
-}
-
-.tags ul li {
-    padding: 2px 4px;
-    background-color: steelblue;
-    margin-right: 1px;
-    color: white;
-}
-
-.group input,
-.group button {
+.section-newsletter__boton{
+    background-color: $coral;
+    border: none;
+    font-family: $primary-font;
+    font-size:small;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-    border-width: 0;
-    font-size: 13px;
-    padding: 5px 10px;
+    padding:2px 8px;
+    margin: 2px 2px;
+    cursor: pointer;
 
-}
-
-.group button {
-    background-color: coral;
-    color: white;
+    &:hover {
+        background-color: $dark-coral;
+     }
 }

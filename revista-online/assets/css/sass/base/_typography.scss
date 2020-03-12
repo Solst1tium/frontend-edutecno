@@ -24,4 +24,14 @@ a{
     font-family: $primary-font;
     font-size: small;
     text-decoration: none;
+    color:$blue;
+    font-weight: bold;
+
+    &:hover{
+        color: $dark-blue;
+    }
+
+    &:visited{
+        color: $coral;
+    }
  }
