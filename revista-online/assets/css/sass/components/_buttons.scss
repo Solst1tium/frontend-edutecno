@@ -1,0 +1,18 @@
+@import "../abstracts/variables";
+
+.section-newsletter__boton{
+    background-color: $coral;
+    border: none;
+    font-family: $primary-font;
+    font-size:small;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding:2px 8px;
+    margin: 2px 2px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $dark-coral;
+     }
+}

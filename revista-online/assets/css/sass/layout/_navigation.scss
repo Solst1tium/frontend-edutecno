@@ -1,0 +1,46 @@
+@import "../abstracts/variables";
+
+.navigation{
+    width: 100%;
+    padding: 2%;
+    border-bottom: 1px solid gray;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #fff;
+    font-family: $primary-font;
+
+    .navigation__nav-menu {
+        float: right;
+        width: 75%;
+        text-align: right;
+        height:inherit;
+
+        @include sizing-small{
+            .menu-items__remover{
+                display:none;
+            }
+        }
+
+        .navigation-nav__menu-items{
+        text-transform: uppercase;
+        font-size: medium !important;
+        font-family: $primary-font;
+
+        }
+    }
+
+    .navigation__logo {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline-block;
+        width:25%;
+    }
+
+    .navigation__input-menu {
+        border-radius: 30px;
+    }
+
+}
+
