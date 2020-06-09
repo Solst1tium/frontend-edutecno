@@ -1,0 +1,25 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.navigation{
+    color: $white;
+
+    p{
+        color: $black;
+        font-family: $roboto;
+        font-size: larger;
+    }
+
+    a{
+        color: $black;
+        font-family: $poppins;
+        font-size: xx-large;
+    }
+}
+
+.navigation__brand--container{
+    margin: 0;
+    padding: 0;
+    justify-self: start;
+}

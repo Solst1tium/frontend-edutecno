@@ -1,0 +1,31 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.header{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.header__container{
+    background-image: url("../../../assets/img/image-banner.png");
+    background-color: #cccccc;
+    width:100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 50% 50%;
+    flex: none;
+  }
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+    .header__container{
+        height: 150px;
+    }
+}
