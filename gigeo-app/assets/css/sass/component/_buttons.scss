@@ -1,0 +1,17 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.btn--message {
+    color: $white !important;
+    background-color:$aqua !important;
+    border-color: $aqua !important;
+    margin: 2px;
+}
+
+.btn--follow {
+    color: $white !important;
+    background-color: $palered !important;
+    border-color: $palered !important;
+    margin: 2px;
+}
