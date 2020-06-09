@@ -1,0 +1,21 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section__memberinfo__img {
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+.section__videolist__img{
+    max-width: 100%;
+    max-height: auto;
+    }
+
+

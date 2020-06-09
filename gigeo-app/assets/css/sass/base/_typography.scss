@@ -1,0 +1,28 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.navigation__brand{
+    @include poppins_text ($black, 70px, $bold, normal);
+}
+
+.navigation__brand--underscore{
+    @include poppins_text ($black, 20px, $normal, normal);
+    vertical-align: super;
+}
+
+.text__sectiontitle{
+    @include roboto_text ($black, 30px, $bold, normal);
+}
+
+.text__followerinfo{
+    @include roboto_text ($lightgrey, 20px, $light, normal);
+}
+
+.text__bold{
+    @include roboto_text ($black, 24px, $bold, normal);
+}
+
+.text__normal{
+    @include roboto_text ($darkgrey, 20px, $light, normal);
+}
