@@ -1,0 +1,22 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+footer{
+    background-color: $raisingblack;
+    color:$white;
+
+    a{
+        color:$white;
+
+        &:hover{
+            color:$darksalmon;
+        }
+    }
+
+    ul, li {
+        display:inline;
+    }
+
+    display:flex;
+    justify-content: space-between;
+}

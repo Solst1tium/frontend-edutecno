@@ -1,0 +1,178 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../base/base';
+
+// Introducción
+
+.section__intro__container{
+    background: url("../../img/bg-hero.png");
+    background-image: url("../../img/bg-hero.svg"),
+        linear-gradient(transparent, transparent);
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-size: 100%;
+    width:100%;
+    height:1150px;
+}
+
+.section__intro__text{
+    max-width:25%;
+    margin:5%;
+}
+
+// Características
+
+.section__charact{
+    text-align: center;
+}
+
+.section__charact__container{
+    height: 350px;
+    display:flex;
+    justify-content: center;
+}
+
+.section__charact__inner{
+    width: 800px;
+    word-wrap: break-word;
+
+    .graph, .text{
+        float: left;
+        width: 400px;
+        padding: 5%;
+        text-align: left;
+    }
+
+    img{
+        width:100%;
+        animation: opacityLoop 10s infinite;
+    }
+}
+
+// Precios
+
+.section__precios__container{
+    background: url("../../img/bg-price.png");
+    background-image: url("../../img/bg-price.svg"),
+        linear-gradient(transparent, transparent);
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 950px;
+    width:100%;
+    padding-top: 250px;
+
+}
+
+.section__precios__cards{
+    height: 500px;
+}
+
+@media (max-width: 576px) { 
+    
+    // Introducción
+
+    .section__intro__container{
+        background-size: 200%;
+        background-position: center;
+        height:700px;
+    }
+
+    .section__intro__text{
+        max-width: 100%;
+    }
+
+    // Características
+
+    .section__charact__container{
+        width:100%;
+        height:500px;
+    }
+    
+    .section__charact__inner{
+        width: 90%;
+        .graph, .text{
+            width: 100%;
+        }
+
+    }
+
+    // Precios
+    
+    .section__precios__container{
+        padding-top: 120px;
+        background-size: 500%;
+        background-position: center;
+        height:1100px;
+
+    }
+
+
+}
+
+@media (max-width: 767.98px) and (min-width: 577px) { 
+
+    // Introducción
+
+    .section__intro__container{
+        background-size: 200%;
+        background-position: center;
+        height:700px;
+    }
+
+    .section__intro__text{
+        max-width: 100%;
+    }
+
+    // Características
+
+    .section__charact__container{
+        width:100%;
+        height:500px;
+    }
+
+    .section__charact__inner{
+        width: 75%;
+        .graph, .text{
+            width: 100%;
+        }
+
+    }
+    
+    // Precios
+    
+    .section__precios__container{
+        padding-top: 100px;
+        background-size: 215%;
+        background-position: center;
+        height:850px;
+
+    }
+
+ }
+
+
+@media (max-width: 1024px) and (min-width: 768px) { 
+
+    // Introducción
+
+    .section__intro__container{
+        background-size: 150%;
+        background-position: center;
+        height:800px;
+    }
+
+    .section__intro__text{
+        max-width: 100%;
+    }
+
+     // Características
+
+    .section__charact__inner{
+        max-width: 100%;
+    }
+
+}

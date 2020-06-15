@@ -1,0 +1,25 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font:'Open Sans', sans-serif;
+}
+
+@keyframes opacityTransition {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+@keyframes opacityLoop {
+    0%   {opacity: 0;}
+    25%  {opacity: 1;}
+    50%  {opacity: 0;}
+    75%  {opacity: 1;}
+    100% {opacity: 0;}
+}

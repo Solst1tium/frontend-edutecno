@@ -1,0 +1,40 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.btn {
+    color: $white !important;
+    background-color:$ballblue !important;
+    border-color: $ballblue !important;
+    margin: 2px;
+
+    &:hover{
+        background-color:$middleblue !important;
+        border-color: $middleblue !important;
+    }
+
+    &:focus{
+        background-color:$lavendergray !important;
+        border-color: $lavendergray !important;
+    }
+
+}
+
+.btn--long {
+    color: $white !important;
+    background-color:$ballblue !important;
+    border-color: $ballblue !important;
+    margin: 2px;
+    width: 90%;
+
+    &:hover{
+        background-color:$middleblue !important;
+        border-color: $middleblue !important;
+    }
+
+    &:focus{
+        background-color:$lavendergray !important;
+        border-color: $lavendergray !important;
+    }
+
+}

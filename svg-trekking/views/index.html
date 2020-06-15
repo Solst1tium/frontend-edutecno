@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eva Montecinos">
+
+    <title>Trekking</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b6e62ecf7a.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- Mis archivos -->
+    <link rel="stylesheet" href="../assets/css/sass/style.css">
+    <script src="../assets/js/main.js" type="text/javascript"></script>
+
+</head>
+<body>
+    
+    <header>
+        <nav class="navigation navbar navbar-expand-lg">
+            <div>
+                <a class="navbar-brand d-lg-inline-block" href="#">
+                    <object data="../assets/img/Logo.svg" type="image/svg+xml">
+                        <!-- En caso de no compatibilidad con svg: -->
+                        <p class="navigation__brand">T<span class="navigation__brand--underscore">in</span></p>
+                    </object>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#Introducción">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Características">Características</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Precios">Precios</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <a class="nav-link" href="#">Inicio</a>
+                <button class="btn" type="submit">Registrate</button>
+              </form>
+            </div>
+          </nav>   
+    </header>
+
+<section id="Introducción" class="section__intro">
+    <div class="section__intro__container">
+        <div class="section__intro__text">
+            <p class ="text--sectiontitle">Haz Trekking sin Parar</p>
+            <p class="text--normal">Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos pódrás definir la mejor ruta a tomar con tus compañeros de expedición.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="Características" class="section__charact">
+    <p class ="text--sectiontitle">Características</p>
+    <div class="section__charact__container">
+        <div class="section__charact__inner">
+            <div class="graph">
+                <img src="../assets/img/bar-graph.svg" alt="Gráfico de barras animado asociado a estadísticas de desempeño"/>
+            </div>
+            <div class="text">
+                <p class="text--sectionsubtitle">Estadísticas de tu progreso</p>
+                <p class="text--normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum maximus lectus eget ex mattis ultrices. Maecenas sit amet neque nec quam vulputate egestas. </p>
+            </div>
+        </div>
+    </div>   
+</section>
+
+
+<section id="Precios" class="section__precios">
+    <div class="section__precios__container">
+        <p class ="text--sectiontitle--white">Precios</p>
+        <div class="section__precios__cards d-flex justify-content-center">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body"><p class="text--normal">Trekk-in Free</p>
+                        <p class ="text--sectiontitle">$0 / mes</p>
+                    </div>
+                    <hr>
+                    <div class="card-body"><ul>
+                        <li>Ver mapas creados por usuarios</li>
+                        <li>Concetar con otros usuarios</li>
+                    </ul></div>
+                    <div class="card-footer">
+                        <button class="btn btn--long" type="submit">Open Free</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body"><p class="text--normal">Trekk-in Premium</p>
+                        <p class ="text--sectiontitle">$3500 / mes</p>
+                    </div>
+                    <hr>
+                    <div class="card-body"><ul>
+                        <li>Ver mapas creados por usuarios</li>
+                        <li>Concetar con otros usuarios</li>
+                        <li>Definir mejores rutas</li>
+                        <li>Mapas Offline</li>
+                        <li>Integración con otras aplicaciones</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn--long" type="submit">Open Premium</button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</section> 
+
+<footer class="footer container-fluid py-5">
+    <div>
+            <span>
+                <a href="#">Legal</a>
+            </span>
+            <span>
+                <a href="#">Cookies</a>
+            </span>
+            <span>
+                <a href="#">Sobre Anuncios</a>
+            </span>
+    </div>
+    <div>
+        © 2008 Trekk SPA.
+    </div>
+</footer>
+
+<!--Scripts -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="../assets/js/script.js"></script>
+
+</body>
+</html>

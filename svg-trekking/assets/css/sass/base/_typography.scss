@@ -1,0 +1,34 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.navigation__brand{
+    @include raleway_text ($raisingblack, 70px, $bold, normal);
+}
+
+.navigation__brand--underscore{
+    @include raleway_text ($raisingblack, 20px, $normal, normal);
+    vertical-align: super;
+}
+
+.text--sectiontitle{
+    @include raleway_text ($raisingblack, 50px, $bold, normal);
+}
+
+.text--sectiontitle--white{
+    @include raleway_text ($white, 50px, $bold, normal);
+    text-align: center;
+}
+
+.text--sectionsubtitle{
+    @include raleway_text ($raisingblack, 20px, $bold, normal);
+}
+
+.text--cardtitle{
+    @include opensans_text ($raisingblack, 24px, $bold, normal);
+}
+
+.text--normal{
+    @include opensans_text ($raisingblack, 16px, $normal, normal);
+    line-height: 2.5rem;
+}

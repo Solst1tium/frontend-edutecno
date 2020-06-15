@@ -1,0 +1,23 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.navigation{
+    color: $white;
+
+    a{
+        color: $raisingblack;
+        font-family: $opensans;
+        font-size: $normal;
+        
+        &:hover{
+            color:$ballblue;
+        }
+    }
+}
+
+.navigation__brand--container{
+    margin: 0;
+    padding: 0;
+    justify-self: start;
+}
