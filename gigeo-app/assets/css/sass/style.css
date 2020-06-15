@@ -78,12 +78,6 @@
   font-size: xx-large;
 }
 
-.navigation__brand--container {
-  margin: 0;
-  padding: 0;
-  justify-self: start;
-}
-
 .section__memberinfo__container {
   display: flex;
   align-items: center;
