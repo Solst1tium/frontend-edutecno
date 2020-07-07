@@ -1,0 +1,38 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.text--title{
+    @include pressstart_text ($black, 48px, $bold, normal);
+    text-align: center;
+}
+
+.text--subtitle{
+    @include pressstart_text ($black, 30px, $bold, normal);
+    text-align: center;
+}
+
+.text--title{
+    @include pressstart_text ($black, 48px, $bold, normal);
+    text-align: center;
+}
+
+.text--subtitle{
+    @include pressstart_text ($black, 30px, $bold, normal);
+    text-align: center;
+}
+
+
+.text--bold{
+    @include josefin_text ($black, 24px, $bold, normal);
+}
+
+.text--normal{
+    @include josefin_text ($black, 20px, $light, normal);
+    text-align: center;
+}
+
+.text--special{
+    @include josefin_text ($bostonunired, 20px, $light, normal);
+}
+

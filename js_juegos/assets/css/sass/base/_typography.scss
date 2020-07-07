@@ -1,0 +1,25 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.text--title{
+    @include pacifico_text ($black, 48px, $bold, normal);
+    text-align: center;
+}
+
+.text--subtitle{
+    @include pacifico_text ($black, 30px, $bold, normal);
+    text-align: center;
+}
+
+.text--bold{
+    @include josefin_text ($black, 24px, $bold, normal);
+}
+
+.text--normal{
+    @include josefin_text ($black, 20px, $light, normal);
+}
+
+.text--special{
+    @include josefin_text ($tyrianpurple, 20px, $light, normal);
+}

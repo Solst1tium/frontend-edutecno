@@ -1,0 +1,116 @@
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../../../img/trebol.svg"), linear-gradient(transparent, transparent);
+  background-color: #FFFFFF;
+  background-repeat: repeat;
+}
+
+hr {
+  border-top: 3px dotted #661933;
+  max-width: 75%;
+}
+
+.section__intro object {
+  width: 50px;
+}
+
+.section__deco object {
+  width: 150px;
+}
+
+.text--title {
+  font-family: "Pacifico";
+  color: #001514;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+.text--subtitle {
+  font-family: "Pacifico";
+  color: #001514;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+.text--bold {
+  font-family: "Josefin Sans";
+  color: #001514;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text--normal {
+  font-family: "Josefin Sans";
+  color: #001514;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.text--special {
+  font-family: "Josefin Sans";
+  color: #661933;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.wrapper {
+  display: inline-block;
+  width: 75%;
+  background-color: #F5F5F5;
+  border-radius: 25px;
+  border: 5px #661933;
+  border-style: dashed;
+  padding: 15px;
+}
+
+.botonera {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.section__deco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+@media (max-width: 767.98px) {
+  .wrapper {
+    width: 100%;
+    padding: 5px;
+  }
+}
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+}
+.btn--juegos {
+  color: #FFFFFF !important;
+  background-color: #661933 !important;
+  border-color: #FFFFFF !important;
+  margin: 2px;
+  width: 350px;
+}
+
+/*# sourceMappingURL=style,css.map */

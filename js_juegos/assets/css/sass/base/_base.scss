@@ -1,0 +1,16 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.section__intro object {
+  width: 50px;
+}
+.section__deco object {
+  width: 150px;
+}

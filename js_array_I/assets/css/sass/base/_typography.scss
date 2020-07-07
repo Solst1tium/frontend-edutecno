@@ -1,0 +1,24 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.text--title{
+    @include strait_text ($indigodye, 48px, $bold, normal);
+    text-align: center;
+}
+
+.text--subtitle{
+    @include strait_text ($indigodye, 30px, $bold, normal);
+}
+
+.text--bold{
+    @include strait_text ($indigodye, 24px, $bold, normal);
+}
+
+.text--normal{
+    @include strait_text ($indigodye, 20px, $light, normal);
+}
+
+.text--special{
+    @include strait_text ($tyrianpurple, 20px, $light, normal);
+}

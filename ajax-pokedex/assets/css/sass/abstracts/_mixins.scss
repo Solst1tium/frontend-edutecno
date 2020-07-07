@@ -1,0 +1,17 @@
+@import '../abstracts/variables';
+
+  @mixin josefin_text ($font-color, $given-font-size, $given-font-weight, $given-font-style) {
+  font-family: 'Josefin Sans';
+  color: $font-color;
+  font-size: $given-font-size;
+  font-weight: $given-font-weight;
+  font-style: $given-font-style;
+}
+
+@mixin pressstart_text ($font-color, $given-font-size, $given-font-weight, $given-font-style) {
+  font-family: 'Press Start 2P';
+  color: $font-color;
+  font-size: $given-font-size;
+  font-weight: $given-font-weight;
+  font-style: $given-font-style;
+}

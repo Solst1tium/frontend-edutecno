@@ -1,0 +1,13 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.btn--juegos {
+    color: $white !important;
+    background-color:$tyrianpurple !important;
+    border-color: $white !important;
+    margin: 2px;
+    width: 350px;
+}
+
+

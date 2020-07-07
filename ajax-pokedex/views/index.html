@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eva Montecinos">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b6e62ecf7a.js" crossorigin="anonymous"></script>
+
+    <!--Linked -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/jquery.canvasjs.min.js"></script>
+    
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Mis archivos -->
+    <link rel="stylesheet" href="../assets/css/sass/style.css">
+    <script src="../assets/js/main.js" type="text/javascript"></script>
+    
+
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="../assets/img/pokeball.svg">
+
+</head>
+
+<body>
+
+
+<section class="section__intro pt-5 m-2">
+    <div class="wrapper">
+            <p class="text--title"><object type="image/svg+xml" data="../assets/img/pokeball.svg" alt="Pokeball"></object>Pokédex<object type="image/svg+xml" data="../assets/img/pokeball.svg" alt="Pokeball"></object></p>
+            <p class="text--subtitle">¡Quién es ese Pokemon!</p>
+    </div>
+</section>
+
+<section class="section__pokedex pt-5 m-2">
+    <div class="wrapper">
+        <div class="pokedex__left">
+            <div class="text--subtitle" id="pokedex__name"></div>
+            <div class="text--normal" id="pokedex__image"><p class="text--title"><object type="image/svg+xml" data="../assets/img/pokeball.svg" alt="Pokeball"></object></p></div>
+            <div>
+                <div class="text--normal" id="pokedex__element"></div>
+                <div class="text--normal" id="pokedex__number"></div>
+            </div>
+            <div class="pokedex__badges">
+                <div class="text--normal" id="pokedex__element__badge"></div>
+                <div class="text--normal" id="pokedex__element__badge2"></div>
+            </div>
+        </div>
+        <div class="pokedex__right">
+            <div>
+                <input id="pokedex__input" value="" placeholder="Ingrese número de pokemon" class="form-content">
+                <input id="pokedex__btn" class="btn btn--pokedex" type="button" value="Buscar">
+            </div>
+            <div class="pokedex__infosummary">
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    
+    $("#pokedex__btn").click(function(){
+        $("#pokedex__image").empty();
+        $("#pokedex__name").empty();
+        $("#pokedex__number").empty();
+        $("#pokedex__element").empty();
+        $("#pokedex__element__badge").empty();
+        $("#pokedex__element__badge2").empty();
+        var idPokemon = $("#pokedex__input").val();
+        
+        $.ajax({
+            method: "GET",
+            url: "https://pokeapi.co/api/v2/pokemon/" + idPokemon + "/",
+
+
+        }).done(function(data){
+            var eleBadge = ['bug', 'dark', 'dragon', 'electric', 'fairy', 'fighting', 'fire', 'flying', 'ghost', 'grass', 'ground', 'ice', 'normal', 'poison', 'psychic', 'rock', 'steel', 'water'];
+            var pokestats = {name:"", value:0};
+            var pokestats2= data.types[0].type.name;
+            
+            if (data.types[1] !=undefined){
+                pokestats2 += ', ' + data.types[1].type.name;
+            }
+
+            $("#pokedex__image").append("<img src='" + data.sprites.front_default + "'>");
+            $("#pokedex__name").append("Pokémon: " + data.name);
+            $("#pokedex__number").append("Número: " + idPokemon);
+            $("#pokedex__element").append("Elemento: " + pokestats2);
+
+            for (i=0; i<data.stats.length;i++){
+                pokestats[i] = {name: data.stats[i].stat.name, value: data.stats[i].base_stat};
+            }
+
+            const index = eleBadge.findIndex(x => x === data.types[0].type.name);
+            $("#pokedex__element__badge").append("<img src='../assets/img/" + (index+1) +".svg'>");
+            if (data.types[1] !=undefined){
+                pokestats2 += ', ' + data.types[1].type.name;
+                const index2 = eleBadge.findIndex(x => x === data.types[1].type.name);
+                 $("#pokedex__element__badge2").append("<img src='../assets/img/" + (index2+1) +".svg'>");
+            }
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                title:{
+                    text: "Stats del Pokémon",
+                    fontFamily: 'Comic Sans MS'        
+                },
+                data: [              
+                {
+                    type: "column",
+                    fontFamily: 'Comic Sans MS', 
+                    dataPoints: [
+                        { label: pokestats[0].name,  y: pokestats[0].value},
+                        { label: pokestats[1].name,  y: pokestats[1].value},
+                        { label: pokestats[2].name,  y: pokestats[2].value},
+                        { label: pokestats[3].name,  y: pokestats[3].value},
+                        { label: pokestats[4].name,  y: pokestats[4].value},
+                        { label: pokestats[5].name,  y: pokestats[5].value},
+                    ]
+                }
+            ]
+        });
+        chart.render();
+    
+        }).fail(function(){
+
+            alert("Campo vacio, intente nuevamente");
+        });    
+    });
+
+</script>
+</body>
+</html>

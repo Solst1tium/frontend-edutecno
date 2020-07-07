@@ -1,0 +1,13 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+
+.btn--consulta {
+    color: $white !important;
+    background-color:$aqua !important;
+    border-color: $aqua !important;
+    margin: 2px;
+    width: 300px;
+}
+
+

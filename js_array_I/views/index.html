@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eva Montecinos">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b6e62ecf7a.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Strait&display=swap" rel="stylesheet">
+
+    <!-- Mis archivos -->
+    <link rel="stylesheet" href="../assets/css/sass/style.css">
+    <script src="../assets/js/main.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="../assets/img/clinic-medical-solid.svg">
+
+    <title>Centro Médico Ñuñoa</title>
+
+</head>
+
+<body>
+
+<section class="section__sumario pt-3">
+    <div class="wrapper">
+        <div>
+            <p class="text--title">Centro Médico Ñuñoa</p>
+            <p class="text--subtitle" style="text-align: center;"><object type="image/svg+xml" data="../assets/img/caduceus.svg" alt="Caduceus"></object>Estadísticas<object type="image/svg+xml" data="../assets/img/caduceus.svg" alt="Caduceus"></object></p><hr>
+        </div>
+        <hr>
+        <div>
+            <p class="text--subtitle">Total de Atenciones: <span class="text--bold" id="estadisticas_totales"></span> </span><span class="text--bold" id="estadisticas_totales2"></span></p>
+            <p><span class="text--bold">Listado de Pacientes: </span></p>
+            <div id="total" style ="display:none">
+                <p><span class="text--normal" id="lista_pacientes"></span></p>
+            </div>
+            <button type="button" id="btn__0a" class="btn--consulta" onclick="desplegar('btn__0a', 'total')">Mostrar Datos</button>
+            <hr>
+            <p><span class="text--bold">Listado Actualizado de Pacientes: </p>
+            <div id="total2" style ="display:none">
+                <p><span class="text--normal" id="lista_pacientes2"></span></p>
+            </div>
+            <button type="button" id="btn__0b" class="btn--consulta" onclick="desplegar('btn__0b', 'total2')">Mostrar Datos</button>
+        </div>
+    </div>
+</section>
+<hr>
+<section class="section__detalle">
+    <div class="wrapper">
+        <p class="text--subtitle">Detalle de Atenciones</p>
+        <div>
+            <p class="text--bold">Radiología:</p>
+            <div id="radio" style ="display:none">
+                <p><span class="text--bold" id="total_radio"></span><span class="text--bold" id="total_radio2"></span></p>
+                <p><span class="text--normal" id="pacientes_radio"></span></p>
+                <p><span class="text--bold">Listado Actualizado de Pacientes:</span></p>
+                <p><span class="text--normal" id="extra_radio"></span></p>
+            </div>
+            <button type="button" id="btn__1" class="btn--consulta" onclick="desplegar('btn__1', 'radio')">Mostrar Datos</button>
+            <hr>  
+            <p class="text--bold">Traumatología:</p>
+            <div id="trauma" style ="display:none">
+                <p><span class="text--bold" id="total_trauma"></span><span class="text--bold" id="total_trauma2"></span></p>
+                <p><span class="text--normal" id="pacientes_trauma"></span></p>
+                <p><span class="text--bold">Listado Actualizado de Pacientes:</span></p>
+                <p><span class="text--normal" id="extra_trauma"></span></p>
+
+            </div>
+            <button type="button" id="btn__2" class="btn--consulta" onclick="desplegar('btn__2', 'trauma')">Mostrar Datos</button>
+            <hr>
+            <p class="text--bold">Dental:</p> 
+            <div id="dental" style ="display:none">
+                <p><span class="text--bold" id="total_dental"></span><span class="text--bold" id="total_dental2"></span></p>
+                <p><span class="text--normal" id="pacientes_dental"></span></p>
+                <p><span class="text--bold">Listado de Pacientes: </span></p>
+                <p><span class="text--normal" id="extra_dental"></span></p>
+                <p><span class="text--bold">Listado Actualizado de Pacientes (Previsión Corregida):</span></p>
+                <p><span class="text--normal" id="extra_dental2"></span></p>
+            </div>
+            <button type="button" id="btn__3" class="btn--consulta" onclick="desplegar('btn__3', 'dental')">Mostrar Datos</button>   
+        </div>
+    </div>
+</section>
+
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- Mis Scripts -->
+<script src="../assets/js/script.js"></script>
+<!-- <script>document.write('<p>Estadisticas Centro Médico Ñuñoa</p>')</script> -->
+
+</body>
+</html>

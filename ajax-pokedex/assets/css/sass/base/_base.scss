@@ -1,0 +1,19 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $white;
+  font-family: $josefin;
+}
+
+.section__intro object {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.section__pokedex object {
+  height:200px;
+}

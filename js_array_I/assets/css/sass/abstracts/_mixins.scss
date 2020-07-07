@@ -1,0 +1,10 @@
+@import '../abstracts/variables';
+
+  @mixin strait_text ($font-color, $given-font-size, $given-font-weight, $given-font-style) {
+  font-family: 'Strait';
+  color: $font-color;
+  font-size: $given-font-size;
+  font-weight: $given-font-weight;
+  font-style: $given-font-style;
+}
+

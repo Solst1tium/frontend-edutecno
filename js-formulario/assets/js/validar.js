@@ -27,14 +27,14 @@ function validar(){
     } else if(!valTelefono(telefono)){
         return false;
     }else{
-        alert (`Bienvenido, ${nombre}. Tus datos han sido registrados correctamente.`);
+        alert (`Bienvenido, ${nombre} ${apellido} . Tu nombre de usuario es ${nombreUser}. Tus datos han sido registrados correctamente.`);
         return false;
     }
 }
 
 
 function valNombre(nombre){
-    if (nombre.length>10){
+    if (nombre.length>30){
         alert("El nombre es muy largo");
         return false;
     }
@@ -44,7 +44,7 @@ function valNombre(nombre){
 }
             
 function valApellido(apellido){
-    if (apellido.length>10){
+    if (apellido.length>80){
         alert("El apellido es muy largo");
         return false;
     }
@@ -56,7 +56,7 @@ function valApellido(apellido){
 function valCorreo(correo){
     let validador = correo.includes("@" || ".");
     if (validador){
-        if (correo.length>15){
+        if (correo.length>100){
             alert("El correo es muy largo");
             return false;
         }else{
@@ -70,7 +70,7 @@ function valCorreo(correo){
 }
             
 function valUsuario(nombreUser){
-    if (nombreUser.length>10){
+    if (nombreUser.length>20){
         alert("El nombre de usuario es muy largo");
         return false;
     }
@@ -82,7 +82,7 @@ function valUsuario(nombreUser){
 function valTelefono(telefono){
     let validador = /^\d+$/.test(telefono);
     if (validador){
-        if (telefono.length>10){
+        if (telefono.length>15){
             alert("El telefono es muy largo");
             return false;
         }else{

@@ -1,0 +1,101 @@
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  border-top: 3px dotted #ACEFE4;
+  max-width: 75%;
+}
+
+.section__sumario object {
+  width: 70px;
+}
+
+.text--title {
+  font-family: "Strait";
+  color: #234B6A;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+.text--subtitle {
+  font-family: "Strait";
+  color: #234B6A;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text--bold {
+  font-family: "Strait";
+  color: #234B6A;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text--normal {
+  font-family: "Strait";
+  color: #234B6A;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.text--special {
+  font-family: "Strait";
+  color: #661933;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.wrapper {
+  display: flex;
+  width: 75%;
+  background-color: #F5F5F5;
+  flex-direction: column;
+  border-radius: 25px;
+  border: 3px #ACEFE4;
+  border-style: dashed;
+  padding: 10px;
+}
+
+.section__sumario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.section__detalle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+@media (max-width: 767.98px) {
+  .wrapper {
+    width: 100%;
+    padding: 5px;
+  }
+}
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+}
+.btn--consulta {
+  color: #FFFFFF !important;
+  background-color: #92dce5 !important;
+  border-color: #92dce5 !important;
+  margin: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
