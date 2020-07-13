@@ -1,0 +1,57 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #e1e0f8;
+  display: inline-block;
+  justify-content: center;
+}
+
+a {
+  color: #348AA7;
+}
+
+p{
+  color: #513B56;
+}
+
+input{
+  width: 95%;
+}
+
+hr.new {
+  border-top: 2px dashed #525174;
+}
+
+h1 h3{
+  color: #525174;
+  text-align: center;
+}
+
+.button{
+  width: 250px;
+  color: #FFFFFF;
+  background-color: #525174;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+}
+
+form input{
+    width: 500px;
+}
+
+form label{
+  font-style: italic;
+  color: #706F9B;
+}
+
+.wrapper {
+  width: auto;
+  background-color: #FFFFFF;
+  border: 6px #525174;
+  padding: 20px;
+  border-style: solid;
+}
